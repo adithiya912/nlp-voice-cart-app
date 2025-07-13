@@ -1,0 +1,59 @@
+name: cart_app
+description: "A Flutter cart application with speech recognition and on-device ML."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI Components
+  cupertino_icons: ^1.0.8
+
+  # Speech Recognition & Translation
+  google_mlkit_translation: ^0.12.0
+  speech_to_text: ^7.0.0
+  device_info_plus: ^9.0.0
+  provider: ^5.0.0
+
+  # Simple text processing instead of TensorFlow Lite (to avoid conflicts)
+  # We'll use regex and string matching for command parsing
+
+  # Database
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+
+  # PDF Generation for Invoice
+  pdf: ^3.11.3
+  printing: ^5.12.0
+
+  # File Operations & Permissions
+  path_provider: ^2.1.4
+  permission_handler: ^11.3.1
+  open_file: ^3.3.2
+
+
+  # HTTP requests (if needed for future features)
+  http: ^1.2.2
+
+  # State Management (optional but recommended)
+
+
+  # Text processing for command parsing
+  string_similarity: ^2.0.0
+
+  # File picker (for future features)
+  file_picker: ^8.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
